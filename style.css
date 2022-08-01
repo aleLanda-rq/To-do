@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+background-image: linear-gradient(120deg, #dbbb52, #f9a790);
+color:white;
+font-family: Shadows Into Light;
+min-height: 100vh;
+}
+header{
+    font-size:2rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 0.5rem;
+    font-size:2rem;
+    border: none;
+    background:white;
+
+}
+form button{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color:#f97652;
+    background-color: white;
+}
+form button:hover{
+    background-color: #f97652;
+    color:white;
+}
+.todo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_list{
+    min-width:30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color:black;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.todo li{
+    flex: 1;
+}
+.complete-btn, .trash-btn{
+    background-color: #f97652;
+    color:white;
+    border:none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn{
+     background-color: rgb(82, 177, 82);
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+/* select{
+-webkit-appearance: none;
+-moz-app:none;
+border:none;
+appearance: none;
+outline:none;
+}
+.select{
+    margin:1rem;
+    position: relative;
+    overflow: hidden;
+}
+select{
+    color:#f97652;
+    width: 10rem;
+    cursor:pointer;
+   padding: 1rem;
+}
+.select::after{
+    content:"\25BC";
+    position: absolute;
+    background-color: #f97652;
+    top: 0;
+    right:0;
+    padding:1rem;
+    pointer-events: none;
+    transition:all 0.3s ease;
+
+}
+.select:hover::after{
+    background-color: white;
+    color:#f97652;
+} */
